@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String    @id @default(cuid())
+  name      String
+  email     String    @unique
+  password  String
+  products  Product[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  price       Decimal  @db.Decimal(10, 2)
+  imageUrl    String?
+  salesCount  Int      @default(0)
+  shareSlug   String   @unique @default(cuid())
+  published   Boolean  @default(true)
+  authorId    String
+  author      User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  orders      Order[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([authorId])
+  @@index([published])
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  CANCELED
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  productId       String
+  product         Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+  stripeSessionId String      @unique
+  amount          Decimal     @db.Decimal(10, 2)
+  status          OrderStatus @default(PENDING)
+  buyerEmail      String?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@index([productId])
+}
