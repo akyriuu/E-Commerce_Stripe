@@ -11,7 +11,8 @@ This project models a compact digital marketplace for product creators and buyer
 - Buyers can visit a product page and complete checkout via Stripe.
 - Sales counts are updated automatically when Stripe confirms a successful purchase.
 
-<img width="1298" height="313" alt="image" src="https://github.com/user-attachments/assets/32094f6a-28aa-44fa-a789-edd93f081342" />
+<img width="1224" height="906" alt="image" src="https://github.com/user-attachments/assets/4eb23595-d228-42c2-bd10-95e0ec0cb5be" />
+
 
 
 ## Why this project exists
