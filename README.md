@@ -11,6 +11,9 @@ This project models a compact digital marketplace for product creators and buyer
 - Buyers can visit a product page and complete checkout via Stripe.
 - Sales counts are updated automatically when Stripe confirms a successful purchase.
 
+<img width="1298" height="313" alt="image" src="https://github.com/user-attachments/assets/32094f6a-28aa-44fa-a789-edd93f081342" />
+
+
 ## Why this project exists
 
 The goal is to demonstrate a simple market-pattern application with a clean interface and end-to-end flow:
@@ -30,6 +33,10 @@ The goal is to demonstrate a simple market-pattern application with a clean inte
 - PostgreSQL: relational product and user storage
 - JWT authentication: secure protected routes for seller actions
 - Stripe Checkout + webhook: payment flow and sale tracking
+
+
+<img width="637" height="496" alt="image" src="https://github.com/user-attachments/assets/07853557-a718-4112-8028-1933d9dfaf8a" />
+
 
 ### Frontend
 
@@ -113,6 +120,11 @@ Este projeto modela um marketplace digital compacto para criadores de produtos e
 - Compradores podem visitar a página de um produto e concluir o checkout via Stripe.
 - Contagens de vendas são atualizadas automaticamente quando o Stripe confirma uma compra concluída.
 
+
+
+<img width="1224" height="906" alt="image" src="https://github.com/user-attachments/assets/a3908c96-f03a-43f5-a51f-1aef465ba44a" />
+
+
 ## Por que este projeto existe
 
 O objetivo é demonstrar uma aplicação com padrão de marketplace simples e interface limpa com fluxo completo:
@@ -132,6 +144,11 @@ O objetivo é demonstrar uma aplicação com padrão de marketplace simples e in
 - PostgreSQL: armazenamento relacional de produtos e usuários
 - Autenticação JWT: rotas protegidas para ações do vendedor
 - Stripe Checkout + webhook: fluxo de pagamento e rastreamento de vendas
+
+  
+
+<img width="637" height="496" alt="image" src="https://github.com/user-attachments/assets/85702576-1552-49f3-b7d9-1f3b2067e542" />
+
 
 ### Frontend
 
