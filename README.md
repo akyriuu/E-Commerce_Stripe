@@ -4,7 +4,7 @@ Vitrine.br - E-commerce is a clean marketplace experience built with modern Type
 
 ## What this project does
 
-This project models a compact digital marketplace for product creators and buyers.
+This project models a compact digital marketplace for product creators and buyers!
 
 - Sellers can register, log in, publish products, update items, and delete products.
 - The public storefront lists published products with shareable product pages.
